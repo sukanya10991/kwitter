@@ -1,120 +1,184 @@
-html, body
-{
-  height: 100%;
-  margin: 0;
-}
+ body {
+     height: 100%;
+     margin: 0;
+     background: linear-gradient(to right top, #33a0f1 0%, seagreen 100%);
+     background-size: cover;
+ }
 
-body
-{
-background: linear-gradient(to right top, #6a1372, hsl(286, 69%, 42%), #c45ace, #e898f3);
-}
+ .login_div {
+     background: none;
+     border-radius: 25px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: antiquewhite;
+     float: none;
+     background: linear-gradient(to right top, #33a0f1 0%, seagreen 100%);
+     background-position: center;
+     background-size: cover;
+ }
 
-.header
-{
-	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
-}
-.header img
-{
-	width: 80px;margin-left: -15px;
-}
+ #icon {
+     width: 70px;
+ }
 
-.login_div
-{
-	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
-}
+ .logo {
+     width: 200px !important;
+ }
 
-.logo
-{
-	width: 200px;margin-top: 30px;border-radius: 40px;
-	height:150px;
-}
+ #b1 {
+     background: none;
+     border-radius: 25px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: antiquewhite;
+     float: left;
+     height: 12%;
+     background: linear-gradient(to right top, rgb(36, 177, 177) 0%, seagreen 100%);
+ }
 
-#login_button
-{
-	width: 80%;border-radius: 15px;
-}
+ #b {
+     background: none;
+     width: 25%;
+     border-radius: 25px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: white;
+     float: none;
+     background: linear-gradient(to right top, rgb(36, 177, 177) 0%, seagreen 100%);
+ }
 
-.room_name
-{
-	cursor: pointer;
-	font-size: 20px;
-}
+ h1 {
+     color: white;
+ }
 
+ h3 {
+     color: white;
+ }
 
-#logout
-{
-	font-size: 20px; float: right;
-}
+ h4 {
+     color: white;
+ }
 
+ p {
+     color: white;
+ }
 
-#output
-{
-	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
-}
+ label {
+     color: white;
+ }
 
-.input_div_room_page
-{
-	width: 80%;
-}
+ h2 {
+     color: white;
+ }
 
-.input_div label
-{
-	color: white;font-size: 20px;
-}
+ #login_button {
+     width: 20%;
+     border-radius: 15px !important;
+     font-size: 20px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: antiquewhite;
+     float: none;
+     background-color: rgb(53, 160, 187);
+ }
 
+ #addroom {
+     font-size: 17px;
+     margin-right: 70px;
+ }
 
-.input_div_message_page
-{
-	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
-}
-.input_div_message_page label
-{
-	color: black;
-}
-.input_div_message_page #msg
-{
-	width: 80%;
-}
-.input_div_message_page button
-{
-	margin-top: 15px;
-	width: 50%; 
-}
-.color_white
-{
-	color: white
-}
+ #sour {
+     background-image: linear-gradient(to right top, #33a0f1 0%, seagreen 100%);
+     background-size: cover;
+     border-radius: 15px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: white;
+     float: none;
+     width: 80%;
+     height: 55%;
+ }
 
-.user_tick
-{
-	width:20px;
-}
-.message_h4
-{
-	padding-left:5px;color:grey;
-}
-#icon{
-	width:200px;
-	height:150px;
-}
-#twice{
-	width:200px;
-	height:150px;
-}
-#add_room{
-	font-size: 20px;
-	color: white;
-	background-color: rgb(201, 98, 201);
-	border-style: solid;
-	border-width: 2px;
-	border-color: white
-}
-#trending_rooms{
-	border-radius: 25px;
-	background-color: palevioletred;
-	height:30px;
-	background: linear-gradient(to right top, #6a1372, hsl(286, 69%, 42%), #c45ace, #e898f3);
-	border-style: solid;
-	border-width: 2px;
-	border-color: white;
-}
+ #addroomb {
+     width: 30%;
+     font-size: 25px;
+     border-style: solid;
+     border-width: 3px;
+     border-color: white;
+     float: none;
+ }
+
+ #text {
+     margin-right: 60px;
+     font-size: 25px !important;
+ }
+
+ #s {
+     font-size: 25px !important;
+     color: black;
+     width: 97%;
+     background-color: white;
+     margin-top: 2px;
+ }
+
+ #u {
+     font-size: 25px !important;
+     color: black;
+     width: 97%;
+     background-color: white;
+     margin-top: 2px;
+ }
+
+ #k {
+     font-size: 25px !important;
+     color: black;
+     width: 97%;
+     background-color: white;
+     margin-top: 2px;
+ }
+
+ #uo {
+     font-size: 25px !important;
+     color: black;
+     width: 97%;
+     background-color: white;
+     margin-top: 2px;
+ }
+
+ #warn {
+     width: 23%;
+     font-size: 23px !important;
+     padding-top: 6px !important;
+     padding-bottom: 6px !important;
+ }
+
+ #request {
+     background-color: white;
+     border-color: black;
+     border-style: solid;
+     border-width: 1px;
+     width: 13%;
+     height: 33px;
+     padding-top: 3px;
+     font-size: 20px;
+     margin-bottom: 10px;
+ }
+
+ #empty {
+     width: 20%;
+ }
+
+ .input_div_message_page {
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     background: cadetblue;
+ }
+
+ .input_div_message_page_i {
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     background: linear-gradient(to right top, #33a0f1 0%, seagreen 100%);
+     border-style: solid;
+ }
