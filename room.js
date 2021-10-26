@@ -1,13 +1,13 @@
-// Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyDg-2nbFXw0mC3R4p_wtCKKXQldMtePMm4",
-  authDomain: "minecraftchat-3bc04.firebaseapp.com",
-  databaseURL: "https://minecraftchat-3bc04-default-rtdb.firebaseio.com",
-  projectId: "minecraftchat-3bc04",
-  storageBucket: "minecraftchat-3bc04.appspot.com",
-  messagingSenderId: "633302403578",
-  appId: "1:633302403578:web:2c06ce3abe38dfdf63bc43"
+  apiKey: "AIzaSyCme94tB5-YeTiuZ1sp8KMpyFdLy6Eyog0",
+  authDomain: "mc-chat-6b809.firebaseapp.com",
+  databaseURL: "https://mc-chat-6b809-default-rtdb.firebaseio.com",
+  projectId: "mc-chat-6b809",
+  storageBucket: "mc-chat-6b809.appspot.com",
+  messagingSenderId: "829803378253",
+  appId: "1:829803378253:web:39bb8fabe625f6dae4ce04"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -27,6 +27,7 @@ function getData() {
   firebase.database().ref("/")('value', function (snapshot) {
     document.getElementById("sour").innerHTML = "";
     snapshot.forEach(function (childSnapshot) {
+      
       childKey = childSnapshot.key;
       Room_names = childKey;
       //Start code
