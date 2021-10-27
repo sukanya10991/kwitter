@@ -12,19 +12,19 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 username = localStorage.getItem("user_username");
-document.getElementById("welcome").innerHTML = "Welcome " + username + "!";
+// document.getElementById("welcome").innerHTML = "Welcome " + username + "!";
 
 function addroomwdyhm() {
   room_name = document.getElementById("addroom").value;
   firebase.database().ref("/").child(room_name).update({
     purpose: "adding room name"
   });
-  localStorage.setItem("roomname", room_name);
+  localStorage.setItem("roomname", room_name);  
   window.location = "page.html";
 }
 
 function getData() {
-  firebase.database().ref("/")('value', function (snapshot) {
+  firebase.database().ref("/").on('value', function (snapshot) {
     document.getElementById("sour").innerHTML = "";
     snapshot.forEach(function (childSnapshot) {
       
